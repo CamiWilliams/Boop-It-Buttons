@@ -1,0 +1,48 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Like Bop it, but legal.",
+          "examplePhrases": [
+            "Alexa open boop it",
+            "Alexa tell boop it buttons to register my buttons",
+            "Alexa play boop ir"
+          ],
+          "name": "Boop It Buttons",
+          "description": "Sample Full Description"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": [],
+      "gadgetSupport": {
+        "maxGadgetButtons": 1,
+        "numPlayersMax": 1,
+        "minGadgetButtons": 1,
+        "requirement": "OPTIONAL",
+        "numPlayersMin": 1
+      }
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom"
+        },
+        "interfaces": [
+          {
+            "type": "RENDER_TEMPLATE"
+          },
+          {
+            "type": "GAME_ENGINE"
+          },
+          {
+            "type": "GADGET_CONTROLLER"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

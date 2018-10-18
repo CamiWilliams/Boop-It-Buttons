@@ -1,0 +1,211 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "boop it buttons",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "heelp"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stoop"
+          ]
+        },
+        {
+          "name": "RegisterIntent",
+          "samples": [
+            "assign my buttons",
+            "set up",
+            "set up my buttons",
+            "sign up buttons",
+            "sign up my buttons",
+            "sign up",
+            "register buttons",
+            "register my buttons",
+            "i want to register",
+            "register"
+          ]
+        },
+        {
+          "name": "StartGameIntent",
+          "samples": [
+            "im ready",
+            "i am ready",
+            "i want to start",
+            "engage",
+            "engage hyper drive",
+            "engage hyperdrive",
+            "lets go",
+            "ready",
+            "begin",
+            "start",
+            "start the game",
+            "begin game",
+            "start game"
+          ]
+        },
+        {
+          "name": "LeaderboardIntent",
+          "samples": [
+            "who is on the leaderboard",
+            "leaderboard",
+            "am i on the leaderboard",
+            "who is the best",
+            "who is winning",
+            "who is the best this week",
+            "who is the best overall",
+            "what is the leaderboard",
+            "current leaderboard",
+            "leader board"
+          ]
+        },
+        {
+          "name": "BadgeIntent",
+          "samples": [
+            "badges",
+            "open badges",
+            "open my badges",
+            "tell me my badges",
+            "how am i doing",
+            "what badges do i have",
+            "what are my badges"
+          ]
+        },
+        {
+          "name": "ResetIntent",
+          "samples": [
+            "reset my high scores",
+            "reset scores",
+            "clear scores",
+            "reset my scores",
+            "clear my scores",
+            "clear my high scores",
+            "clear my badges",
+            "reset my badges",
+            "reset"
+          ]
+        },
+        {
+          "name": "OptInIntent",
+          "slots": [
+            {
+              "name": "optInResponse",
+              "type": "optInResponseType"
+            }
+          ],
+          "samples": [
+            "i {optInResponse} opt in to the leaderboard",
+            "i {optInResponse} opt in"
+          ]
+        },
+        {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateSettingsIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "do not want",
+                "synonyms": [
+                  "don't want to",
+                  "do not want to"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "do want",
+                "synonyms": [
+                  "want to",
+                  "do want to"
+                ]
+              }
+            }
+          ],
+          "name": "optInResponseType"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "ResetIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.512619748919"
+          }
+        }
+      ]
+    },
+    "prompts": [
+      {
+        "id": "Confirm.Intent.512619748919",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Oh my. Are you sure you want to destroy everything you love?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Are you sure you want to reset your high scores and badges?"
+          }
+        ]
+      }
+    ]
+  }
+}
